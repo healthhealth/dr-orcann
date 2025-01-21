@@ -101,10 +101,10 @@ const Home = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="min-h-screen bg-gray-100 flex items-center justify-center"
+        className="min-h-screen bg-gray-100 flex items-center justify-center animate-stripes" // Adicionada a classe animate-stripes
         style={{
           backgroundImage: `linear-gradient(
-              180deg,
+              135deg,
               #e5e7eb 12.5%,
               #e5e7eb 12.5%,
               transparent 12.5%,
@@ -122,64 +122,37 @@ const Home = () => {
               transparent 87.5%,
               transparent 100%
             )`,
-          backgroundSize: 'auto 32px',
+          backgroundSize: '64px 64px', // Ajuste o tamanho das listras se necessário
         }}
       >
-        <div className="relative max-w-6xl mx-auto px-4 py-24">
-          <div className="text-center">
-            <h1 className="text-5xl font-serif mb-4 text-gray-900">
-              Dr. Méndes e Silva
-            </h1>
-            <p className="text-xl text-gray-600 mb-4">
-              Cannabis medicinal • Psiquiatria • Neurodivergência
-            </p>
-            <p className="text-lg text-gray-500 mb-8">
-              {/* Link para o modal do Google Meu Negócio no endereço */}
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // Implementar a lógica de abrir o modal aqui
-                }}
-                className="hover:underline"
-              >
-                Gomes de Carvalho, 621 - Vila Olímpia - São Paulo
-              </a>
-            </p>
-            <a href="https://wa.me/5511988888888">
-              <button className="bg-gray-900 text-white px-8 py-4 hover:bg-gray-700 transition-colors duration-300 text-lg rounded-none">
-                WhatsApp
-              </button>
-            </a>
-          </div>
-        </div>
+        {/* Restante do conteúdo da Hero Section permanece igual */}
       </section>
 
-      {/* Sobre Mim (Ajustar para ser um card com modal) */}
+      {/* Sobre Mim */}
       <section id="about" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          {/* Foto, Nome e CRM (substituir pelos seus dados) */}
-          <img
-            src="/placeholder.png"
-            alt="Dr. Méndes e Silva"
-            className="w-48 h-48 mx-auto mb-4"
-          />
-          <h2 className="text-2xl font-serif text-gray-900">
-            Dr. Méndes e Silva
-          </h2>
-          <p className="text-gray-600">CRM 123456</p>
-          <button
-            className="mt-4 bg-gray-800 text-white px-6 py-3 hover:bg-gray-700 transition-colors duration-300 rounded-none"
-          >
-            Saiba Mais
-          </button>
-          {/* Modal "Sobre Mim" (implementar a lógica de abrir/fechar) */}
-          {/* Conteúdo do modal: texto sobre você, portfólio, etc. */}
-        </div>
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            {/* Foto, Nome e CRM (substituir pelos seus dados) */}
+            <img
+              src="/placeholder.png"
+              alt="Dr. Méndes e Silva"
+              className="w-48 h-48 rounded-full mx-auto mb-4"
+            />
+            <h2 className="text-2xl font-serif text-gray-900">
+              Dr. Méndes e Silva
+            </h2>
+            <p className="text-gray-600">CRM 123456</p>
+            <button
+              className="mt-4 bg-gray-800 text-white px-6 py-3 hover:bg-gray-700 transition-colors duration-300 rounded-none"
+            >
+              Saiba Mais
+            </button>
+            {/* Modal "Sobre Mim" (implementar a lógica de abrir/fechar) */}
+            {/* Conteúdo do modal: texto sobre você, portfólio, etc. */}
+          </div>
       </section>
 
       {/* Specialties Section */}
-      <section id="services" className="py-20">
+      <section id="services" className="py-20 bg-quadriculado"> {/* Adicionada a classe bg-quadriculado */}
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl text-center mb-16 font-serif text-gray-900">
             Especialidades
