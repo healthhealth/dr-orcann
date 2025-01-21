@@ -125,6 +125,34 @@ const Home = () => {
           backgroundSize: '64px 64px', // Ajuste o tamanho das listras se necessário
         }}
       >
+        <div className="relative max-w-6xl mx-auto px-4 py-24">
+          <div className="text-center">
+            <h1 className="text-5xl font-serif mb-4 text-gray-900">
+              Dr. Méndes e Silva
+            </h1>
+            <p className="text-xl text-gray-600 mb-4">
+              Cannabis medicinal • Psiquiatria • Neurodivergência
+            </p>
+            <p className="text-lg text-gray-500 mb-8">
+              {/* Link para o modal do Google Meu Negócio no endereço */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  // Implementar a lógica de abrir o modal aqui
+                }}
+                className="hover:underline"
+              >
+                Gomes de Carvalho, 621 - Vila Olímpia - São Paulo
+              </a>
+            </p>
+            <a href="https://wa.me/5511988888888">
+              <button className="bg-gray-900 text-white px-8 py-4 hover:bg-gray-700 transition-colors duration-300 text-lg rounded-none">
+                WhatsApp
+              </button>
+            </a>
+          </div>
+        </div>
         {/* Restante do conteúdo da Hero Section permanece igual */}
       </section>
 
