@@ -11,7 +11,7 @@ module.exports = {
         serif: ['Georgia', 'ui-serif', 'Georgia', 'Cambria', "Times New Roman", 'Times', 'serif'], // Substitua 'Inter' pela fonte serifada desejada, se não for a Inter
       },
       backgroundImage: {
-        'quadriculado': "url('/fundo-quadriculado.png')", // Substitua pelo caminho da imagem do quadriculado
+        'quadriculado': "url('/quadriculado.webp')", // Substitua pelo caminho da imagem do quadriculado
       },
       },
     },
