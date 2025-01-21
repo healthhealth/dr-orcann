@@ -101,7 +101,7 @@ const Home = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="min-h-screen bg-gray-50 flex items-center justify-center"
+        className="min-h-screen bg-gray-100 flex items-center justify-center"
         style={{
           backgroundImage: `linear-gradient(
               180deg,
@@ -127,13 +127,6 @@ const Home = () => {
       >
         <div className="relative max-w-6xl mx-auto px-4 py-24">
           <div className="text-center">
-            {/* Adicionar chamada para a página de cannabis aqui */}
-            <p className="text-xl text-gray-600 mb-4">
-              Conheça mais sobre a{' '}
-              <Link href="/cannabis" className="text-blue-600 hover:underline">
-                Cannabis Medicinal
-              </Link>
-            </p>
             <h1 className="text-5xl font-serif mb-4 text-gray-900">
               Dr. Méndes e Silva
             </h1>
